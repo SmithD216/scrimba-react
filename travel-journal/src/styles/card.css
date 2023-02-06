@@ -1,0 +1,35 @@
+.card{
+    margin: 1rem;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.card--left{
+    flex: 1;
+}
+
+.card--right{
+    flex: 1;
+}
+
+.card--image{
+    width: 90%;
+    border-radius: 1rem;
+    aspect-ratio: 1;
+}
+
+.card--location{
+    display: inline;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.card--startdate{
+    display: inline;
+    font-weight: bold;
+}
+
+.card--enddate{
+    display: inline;
+    font-weight: bold;
+}
