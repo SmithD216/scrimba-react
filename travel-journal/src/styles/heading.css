@@ -1,0 +1,12 @@
+.heading{
+    background-color: rgb(233, 149, 149);
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.heading--image{
+    width: 5rem;
+    align-self: center;
+}
