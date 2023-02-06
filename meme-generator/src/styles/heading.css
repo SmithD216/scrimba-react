@@ -1,0 +1,25 @@
+.heading{
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    background: rgb(60,1,80);
+    background: linear-gradient(90deg, rgba(60,1,80,1) 0%, rgba(108,22,149,1) 64%); 
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading--image{
+    width: 100%;
+    flex: 0.1;
+    min-width: 5rem;
+    margin: 2rem;
+}
+
+.heading--title{
+    margin-left: 1rem;
+}
+
+.heading--subtitle{
+    margin-left: auto;
+    margin-right: 10rem;
+}
