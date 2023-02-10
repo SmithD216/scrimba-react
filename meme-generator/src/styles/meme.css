@@ -17,13 +17,12 @@
 .meme--button{
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: purple;
     color: white;
     margin: 0 5rem 0 5rem;
     border: none;
     padding: 3rem;
     font-size: 2rem;
     border-radius: 1rem;
-    background: rgb(60,1,80);
     background: linear-gradient(90deg, rgba(60,1,80,1) 0%, rgba(108,22,149,1) 64%);
+    cursor: pointer;
 }
