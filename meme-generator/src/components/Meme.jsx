@@ -18,7 +18,7 @@ export default function Meme(){
             <input type="text" className="meme--bottom"/>
             <button className="meme--button" onClick={getMeme}>Get a new meme image &#128444;&#65039;</button>
         </div>
-        <img src={maymay}/>
+        <img className='meme--image' src={maymay}/>
         </>
     )
 }
