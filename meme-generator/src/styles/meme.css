@@ -32,5 +32,29 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     width: 50rem;
+}
+
+.meme--imageWrapper{
+    position: relative;
+}
+
+.meme--topText, .meme--bottomText{
+    position: absolute;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    font-size: 3rem;
+}
+
+.meme--topText{
+    top: 0;
+}
+
+.meme--bottomText{
+    bottom: 0;
 }

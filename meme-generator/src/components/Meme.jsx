@@ -25,10 +25,10 @@ export default function Meme(){
             <input type="text" className="meme--bottom"/>
             <button className="meme--button" onClick={getMeme}>Get a new meme image &#128444;&#65039;</button>
         </div>
-        <div>
+        <div className='meme--imageWrapper'>
             <img className='meme--image' src={meme.randomImage}/>
-            <h2>One does not simply</h2>
-            <h2>Walk into Mordor</h2>
+            <h2 className='meme--topText'>One does not simply</h2>
+            <h2 className='meme--bottomText'>Walk into Mordor</h2>
         </div>
         </>
     )
