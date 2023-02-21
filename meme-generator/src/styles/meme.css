@@ -49,6 +49,7 @@
     transform: translate(-50%, 0);
     white-space: nowrap;
     font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .meme--topText{

@@ -3,7 +3,6 @@ import '../styles/meme.css';
 import memesData from '../memesData.js'
 
 export default function Meme(){
-    const [maymay, setMayMay] = useState("");
     const [meme, setMeme] = useState({topText: "", bottomText: "", randomImage: ""});
     const [allMemeImages, setAllMemeImages] = useState(memesData);
 
@@ -17,18 +16,39 @@ export default function Meme(){
             }
         })
     }
+
+    function handleChange(){
+        setMeme(prevMeme=>{
+            return{
+                ...prevMeme,
+                [event.target.name]: event.target.value
+            }
+        })
+    }
     
     return(
         <>
         <div className="meme--form">
-            <input type="text" className="meme--top"/>
-            <input type="text" className="meme--bottom"/>
+            <input 
+            type="text" 
+            className="meme--top"
+            name="topText"
+            onChange={handleChange}
+            value={meme.topText}
+            />
+            <input 
+            type="text" 
+            className="meme--bottom"
+            name="bottomText"
+            onChange={handleChange}
+            value={meme.bottomText}
+            />
             <button className="meme--button" onClick={getMeme}>Get a new meme image &#128444;&#65039;</button>
         </div>
         <div className='meme--imageWrapper'>
             <img className='meme--image' src={meme.randomImage}/>
-            <h2 className='meme--topText'>One does not simply</h2>
-            <h2 className='meme--bottomText'>Walk into Mordor</h2>
+            <h2 className='meme--topText'>{meme.topText}</h2>
+            <h2 className='meme--bottomText'>{meme.bottomText}</h2>
         </div>
         </>
     )
